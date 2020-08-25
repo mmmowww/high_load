@@ -1,0 +1,224 @@
+mmmowww@mmmowww-VirtualBox:~$ sudo install composer
+[sudo] password for mmmowww: 
+install: missing destination file operand after 'composer'
+Try 'install --help' for more information.
+mmmowww@mmmowww-VirtualBox:~$ sudo yum install composer
+sudo: yum: command not found
+mmmowww@mmmowww-VirtualBox:~$ sudo install composer
+install: missing destination file operand after 'composer'
+Try 'install --help' for more information.
+mmmowww@mmmowww-VirtualBox:~$ sudo apt update
+Hit:1 http://ru.archive.ubuntu.com/ubuntu focal InRelease
+Hit:2 http://ru.archive.ubuntu.com/ubuntu focal-updates InRelease
+Hit:3 http://ru.archive.ubuntu.com/ubuntu focal-backports InRelease
+Hit:4 http://security.ubuntu.com/ubuntu focal-security InRelease
+Reading package lists... Done                        
+Building dependency tree       
+Reading state information... Done
+45 packages can be upgraded. Run 'apt list --upgradable' to see them.
+mmmowww@mmmowww-VirtualBox:~$ sudo apt install curl php-ci php-mbstring git unzip
+Reading package lists... Done
+Building dependency tree       
+Reading state information... Done
+E: Unable to locate package php-ci
+mmmowww@mmmowww-VirtualBox:~$ sudo apt install curl php-cli php-mbstring git unzip
+Reading package lists... Done
+Building dependency tree       
+Reading state information... Done
+unzip is already the newest version (6.0-25ubuntu1).
+unzip set to manually installed.
+The following package was automatically installed and is no longer required:
+  libfprint-2-tod1
+Use 'sudo apt autoremove' to remove it.
+The following additional packages will be installed:
+  git-man liberror-perl libonig5 php7.4-mbstring
+Suggested packages:
+  git-daemon-run | git-daemon-sysvinit git-doc git-el git-email git-gui gitk
+  gitweb git-cvs git-mediawiki git-svn
+The following NEW packages will be installed
+  curl git git-man liberror-perl libonig5 php-cli php-mbstring php7.4-mbstring
+0 to upgrade, 8 to newly install, 0 to remove and 45 not to upgrade.
+Need to get 6 168 kB of archives.
+After this operation, 40,6 MB of additional disk space will be used.
+Do you want to continue? [Y/n] Y
+Get:1 http://ru.archive.ubuntu.com/ubuntu focal-updates/main amd64 curl amd64 7.68.0-1ubuntu2.2 [161 kB]
+Get:2 http://ru.archive.ubuntu.com/ubuntu focal/main amd64 liberror-perl all 0.17029-1 [26,5 kB]
+Get:3 http://ru.archive.ubuntu.com/ubuntu focal/main amd64 git-man all 1:2.25.1-1ubuntu3 [884 kB]
+Get:4 http://ru.archive.ubuntu.com/ubuntu focal/main amd64 git amd64 1:2.25.1-1ubuntu3 [4 554 kB]
+Get:5 http://ru.archive.ubuntu.com/ubuntu focal/universe amd64 libonig5 amd64 6.9.4-1 [142 kB]
+Get:6 http://ru.archive.ubuntu.com/ubuntu focal/main amd64 php-cli all 2:7.4+75 [2 792 B]
+Get:7 http://ru.archive.ubuntu.com/ubuntu focal-updates/universe amd64 php7.4-mbstring amd64 7.4.3-4ubuntu2.2 [396 kB]
+Get:8 http://ru.archive.ubuntu.com/ubuntu focal/universe amd64 php-mbstring all 2:7.4+75 [2 012 B]
+Fetched 6 168 kB in 0s (36,5 MB/s)   
+Selecting previously unselected package curl.
+(Reading database ... 147044 files and directories currently installed.)
+Preparing to unpack .../0-curl_7.68.0-1ubuntu2.2_amd64.deb ...
+Unpacking curl (7.68.0-1ubuntu2.2) ...
+Selecting previously unselected package liberror-perl.
+Preparing to unpack .../1-liberror-perl_0.17029-1_all.deb ...
+Unpacking liberror-perl (0.17029-1) ...
+Selecting previously unselected package git-man.
+Preparing to unpack .../2-git-man_1%3a2.25.1-1ubuntu3_all.deb ...
+Unpacking git-man (1:2.25.1-1ubuntu3) ...
+Selecting previously unselected package git.
+Preparing to unpack .../3-git_1%3a2.25.1-1ubuntu3_amd64.deb ...
+Unpacking git (1:2.25.1-1ubuntu3) ...
+Selecting previously unselected package libonig5:amd64.
+Preparing to unpack .../4-libonig5_6.9.4-1_amd64.deb ...
+Unpacking libonig5:amd64 (6.9.4-1) ...
+Selecting previously unselected package php-cli.
+Preparing to unpack .../5-php-cli_2%3a7.4+75_all.deb ...
+Unpacking php-cli (2:7.4+75) ...
+Selecting previously unselected package php7.4-mbstring.
+Preparing to unpack .../6-php7.4-mbstring_7.4.3-4ubuntu2.2_amd64.deb ...
+Unpacking php7.4-mbstring (7.4.3-4ubuntu2.2) ...
+Selecting previously unselected package php-mbstring.
+Preparing to unpack .../7-php-mbstring_2%3a7.4+75_all.deb ...
+Unpacking php-mbstring (2:7.4+75) ...
+Setting up liberror-perl (0.17029-1) ...
+Setting up php-cli (2:7.4+75) ...
+Setting up git-man (1:2.25.1-1ubuntu3) ...
+Setting up curl (7.68.0-1ubuntu2.2) ...
+Setting up libonig5:amd64 (6.9.4-1) ...
+Setting up php7.4-mbstring (7.4.3-4ubuntu2.2) ...
+
+Creating config file /etc/php/7.4/mods-available/mbstring.ini with new version
+Setting up php-mbstring (2:7.4+75) ...
+Setting up git (1:2.25.1-1ubuntu3) ...
+Processing triggers for libc-bin (2.31-0ubuntu9) ...
+Processing triggers for man-db (2.9.1-1) ...
+Processing triggers for php7.4-fpm (7.4.3-4ubuntu2.2) ...
+Processing triggers for php7.4-cli (7.4.3-4ubuntu2.2) ...
+mmmowww@mmmowww-VirtualBox:~$ cd var/www/html
+bash: cd: var/www/html: No such file or directory
+mmmowww@mmmowww-VirtualBox:~$ cd /var/www/html
+mmmowww@mmmowww-VirtualBox:/var/www/html$ sudo curl -sS https://getcomposer.org/installer -o composer-setup.php
+mmmowww@mmmowww-VirtualBox:/var/www/html$ php composer-setup.php
+All settings correct for using Composer
+The installation directory "/var/www/html" is not writable
+mmmowww@mmmowww-VirtualBox:/var/www/html$ sudo php composer-setup.php
+All settings correct for using Composer
+Downloading...
+
+Composer (version 1.10.10) successfully installed to: /var/www/html/composer.phar
+Use it: php composer.phar
+
+mmmowww@mmmowww-VirtualBox:/var/www/html$ sudo php composer-setup.php
+All settings correct for using Composer
+Downloading...
+
+Composer (version 1.10.10) successfully installed to: /var/www/html/composer.phar
+Use it: php composer.phar
+
+mmmowww@mmmowww-VirtualBox:/var/www/html$ sudo php composer.phar
+Do not run Composer as root/super user! See https://getcomposer.org/root for details
+   ______
+  / ____/___  ____ ___  ____  ____  ________  _____
+ / /   / __ \/ __ `__ \/ __ \/ __ \/ ___/ _ \/ ___/
+/ /___/ /_/ / / / / / / /_/ / /_/ (__  )  __/ /
+\____/\____/_/ /_/ /_/ .___/\____/____/\___/_/
+                    /_/
+Composer version 1.10.10 2020-08-03 11:35:19
+
+Usage:
+  command [options] [arguments]
+
+Options:
+  -h, --help                     Display this help message
+  -q, --quiet                    Do not output any message
+  -V, --version                  Display this application version
+      --ansi                     Force ANSI output
+      --no-ansi                  Disable ANSI output
+  -n, --no-interaction           Do not ask any interactive question
+      --profile                  Display timing and memory usage information
+      --no-plugins               Whether to disable plugins.
+  -d, --working-dir=WORKING-DIR  If specified, use the given directory as working directory.
+      --no-cache                 Prevent use of the cache
+  -v|vv|vvv, --verbose           Increase the verbosity of messages: 1 for normal output, 2 for more verbose output and 3 for debug
+
+Available commands:
+  about                Shows the short information about Composer.
+  archive              Creates an archive of this composer package.
+  browse               Opens the package's repository URL or homepage in your browser.
+  cc                   Clears composer's internal package cache.
+  check-platform-reqs  Check that platform requirements are satisfied.
+  clear-cache          Clears composer's internal package cache.
+  clearcache           Clears composer's internal package cache.
+  config               Sets config options.
+  create-project       Creates new project from a package into given directory.
+  depends              Shows which packages cause the given package to be installed.
+  diagnose             Diagnoses the system to identify common errors.
+  dump-autoload        Dumps the autoloader.
+  dumpautoload         Dumps the autoloader.
+  exec                 Executes a vendored binary/script.
+  fund                 Discover how to help fund the maintenance of your dependencies.
+  global               Allows running commands in the global composer dir ($COMPOSER_HOME).
+  help                 Displays help for a command
+  home                 Opens the package's repository URL or homepage in your browser.
+  i                    Installs the project dependencies from the composer.lock file if present, or falls back on the composer.json.
+  info                 Shows information about packages.
+  init                 Creates a basic composer.json file in current directory.
+  install              Installs the project dependencies from the composer.lock file if present, or falls back on the composer.json.
+  licenses             Shows information about licenses of dependencies.
+  list                 Lists commands
+  outdated             Shows a list of installed packages that have updates available, including their latest version.
+  prohibits            Shows which packages prevent the given package from being installed.
+  remove               Removes a package from the require or require-dev.
+  require              Adds required packages to your composer.json and installs them.
+  run                  Runs the scripts defined in composer.json.
+  run-script           Runs the scripts defined in composer.json.
+  search               Searches for packages.
+  self-update          Updates composer.phar to the latest version.
+  selfupdate           Updates composer.phar to the latest version.
+  show                 Shows information about packages.
+  status               Shows a list of locally modified packages, for packages installed from source.
+  suggests             Shows package suggestions.
+  u                    Upgrades your dependencies to the latest version according to composer.json, and updates the composer.lock file.
+  update               Upgrades your dependencies to the latest version according to composer.json, and updates the composer.lock file.
+  upgrade              Upgrades your dependencies to the latest version according to composer.json, and updates the composer.lock file.
+  validate             Validates a composer.json and composer.lock.
+  why                  Shows which packages cause the given package to be installed.
+  why-not              Shows which packages prevent the given package from being installed.
+mmmowww@mmmowww-VirtualBox:/var/www/html$ 
+mmmowww@mmmowww-VirtualBox:/var/www/html$ composer require monolog/monolog
+
+Command 'composer' not found, but can be installed with:
+
+sudo apt install composer
+
+mmmowww@mmmowww-VirtualBox:/var/www/html$ sudo composer require monolog/monolog
+[sudo] password for mmmowww: 
+sudo: composer: command not found
+mmmowww@mmmowww-VirtualBox:/var/www/html$ sudo composer require monolog/monolog
+sudo: composer: command not found
+mmmowww@mmmowww-VirtualBox:/var/www/html$ sudo apt install php-monolog
+Reading package lists... Done
+Building dependency tree       
+Reading state information... Done
+The following package was automatically installed and is no longer required:
+  libfprint-2-tod1
+Use 'sudo apt autoremove' to remove it.
+The following additional packages will be installed:
+  php-psr-log
+Suggested packages:
+  php-graylog2-gelf-php php-sentry php-doctrine-couchdb php-ruflin-elastica
+  php-amqplib php-amqp php-mongo php-mongodb php-aws-sdk php-rollbar
+  php-console
+The following NEW packages will be installed
+  php-monolog php-psr-log
+0 to upgrade, 2 to newly install, 0 to remove and 45 not to upgrade.
+Need to get 71,8 kB of archives.
+After this operation, 473 kB of additional disk space will be used.
+Do you want to continue? [Y/n] Y
+Get:1 http://ru.archive.ubuntu.com/ubuntu focal/universe amd64 php-psr-log all 1.1.2-1 [8 268 B]
+Get:2 http://ru.archive.ubuntu.com/ubuntu focal/universe amd64 php-monolog all 1.25.3-1 [63,5 kB]
+Fetched 71,8 kB in 0s (531 kB/s)  
+Selecting previously unselected package php-psr-log.
+(Reading database ... 148006 files and directories currently installed.)
+Preparing to unpack .../php-psr-log_1.1.2-1_all.deb ...
+Unpacking php-psr-log (1.1.2-1) ...
+Selecting previously unselected package php-monolog.
+Preparing to unpack .../php-monolog_1.25.3-1_all.deb ...
+Unpacking php-monolog (1.25.3-1) ...
+Setting up php-psr-log (1.1.2-1) ...
+Setting up php-monolog (1.25.3-1) ...

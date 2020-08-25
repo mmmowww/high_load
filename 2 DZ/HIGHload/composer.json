@@ -1,0 +1,6 @@
+{
+    "name": "slava_pc/hig-hload",
+    "require": {
+        "monolog/monolog": "^2.1"
+    }
+}
