@@ -1,0 +1,496 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"mount",
+				"mountFINAL"
+			],
+			[
+				"helpers",
+				"yii\\helpers\\Url"
+			],
+			[
+				"Client",
+				"ClientAPP"
+			],
+			[
+				"Ex",
+				"Exception"
+			],
+			[
+				"Web",
+				"WebWorker"
+			],
+			[
+				"profi",
+				"profileJSON"
+			],
+			[
+				"de",
+				"default\tdefault"
+			],
+			[
+				"VAR",
+				"var_dump"
+			],
+			[
+				"Kye",
+				"KeyLingua"
+			],
+			[
+				"Lingua",
+				"LinguaShifr"
+			],
+			[
+				"token",
+				"token2"
+			],
+			[
+				"Registration",
+				"RegistrationData"
+			],
+			[
+				"vacancy",
+				"vacancyFaound"
+			],
+			[
+				"v",
+				"v-on\t@evt=\"callback\""
+			],
+			[
+				"print",
+				"print_r"
+			],
+			[
+				"json",
+				"json_encode"
+			],
+			[
+				"Var",
+				"var_dump"
+			],
+			[
+				"Project",
+				"ProjectJSON"
+			],
+			[
+				"Task",
+				"TaskProblem"
+			],
+			[
+				"email",
+				"email"
+			],
+			[
+				"is",
+				"is_array"
+			],
+			[
+				"Ac",
+				"ActiveRecord"
+			],
+			[
+				"activity",
+				"activityUser"
+			],
+			[
+				"Re",
+				"Request"
+			],
+			[
+				"butt",
+				"b4-button-addon\tButton"
+			],
+			[
+				"req",
+				"Request"
+			],
+			[
+				"this",
+				"thisday"
+			],
+			[
+				"Arra",
+				"array"
+			],
+			[
+				"M",
+				"Mwidth"
+			],
+			[
+				"You",
+				"YouComents"
+			],
+			[
+				"th",
+				"this-"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "index.php",
+			"settings":
+			{
+				"buffer_size": 25,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		}
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"pac",
+				"Package Control: Install Package"
+			],
+			[
+				"pa",
+				"Package Control: Install Package"
+			],
+			[
+				"insta",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control: ",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control: ins",
+				"Package Control: Install Package"
+			],
+			[
+				"ins",
+				"Package Control: Install Package"
+			],
+			[
+				"brows",
+				"Preferences: Browse Packages"
+			],
+			[
+				"package Control ",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control: I",
+				"Package Control: Install Package"
+			],
+			[
+				"Pack",
+				"Install Package Control"
+			]
+		],
+		"width": 0.0
+	},
+	"console":
+	{
+		"height": 136.0,
+		"history":
+		[
+			"npm -v"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/D/MyProgect/My.bin",
+		"/D/MyProgect/CSV.csv",
+		"/D/MyProgect/CSV",
+		"/D/ProgramsMy/OSPanel/domains/NORGAU-TEST/migrations/m200730_080538_Valute.php",
+		"/D/ProgramsMy/OSPanel/domains/NORGAU-TEST/views/currency/rendertable.php",
+		"/D/ProgramsMy/OSPanel/domains/NORGAU-TEST/vendor/yiisoft/yii2/base/Controller.php",
+		"/D/programsmy/OSPanel/userdata/temp/yii2basic.sql",
+		"/D/ProgramsMy/OSPanel/domains/NORGAU-TEST/vendor/yiisoft/yii2/Yii.php",
+		"/D/ProgramsMy/OSPanel/domains/NORGAU-TEST/views/currency/LOG/LOG.json",
+		"/D/programsmy/OSPanel/userdata/temp/LOG-2.json",
+		"/D/programsmy/OSPanel/userdata/temp/LOG-1.json",
+		"/D/programsmy/OSPanel/userdata/temp/LOG.json",
+		"/D/ProgramsMy/OSPanel/domains/NORGAU-TEST/controllers/CurrencyController.php",
+		"/D/ProgramsMy/OSPanel/domains/NORGAU-TEST/views/currency/LOG.json",
+		"/D/ProgramsMy/OSPanel/domains/NORGAU-TEST/views/currency/answer.php",
+		"/D/ProgramsMy/OSPanel/domains/yii2/migrations/m191129_110313_mounth.php",
+		"/D/ProgramsMy/OSPanel/domains/YIICORE/yii2-app-advanced/frontend/controllers/WorkController.php",
+		"/D/ProgramsMy/OSPanel/domains/NORGAU-TEST/vendor/codeception/base/src/Codeception/Lib/Driver/PostgreSql.php",
+		"/D/ProgramsMy/OSPanel/domains/yii-dish-master/migrations/m190123_183909_ingredients_dish.php",
+		"/D/ProgramsMy/OSPanel/domains/yii-dish-master/migrations/m190123_183808_ingredients.php",
+		"/D/ProgramsMy/OSPanel/domains/NORGAU-TEST/vendor/symfony/browser-kit/Client.php",
+		"/D/ProgramsMy/OSPanel/domains/NORGAU-TEST/config/web.php",
+		"/D/ProgramsMy/OSPanel/domains/NORGAU-TEST/config/params.php",
+		"/D/ProgramsMy/OSPanel/domains/NORGAU-TEST/web/index.php",
+		"/D/ProgramsMy/OSPanel/domains/MCHES/MCS/database/migrations/2020_07_17_142510_type_image.php",
+		"/D/ProgramsMy/OSPanel/domains/MCHES/MCS/database/migrations/2020_07_17_135427_pathimageorig.php",
+		"/D/ProgramsMy/OSPanel/domains/MCHES/MCS/database/migrations/2020_07_17_135427_pathimagehandel.php",
+		"/D/ProgramsMy/OSPanel/domains/MCHES/MCS/database/migrations/2020_07_14_050656_loggers.php",
+		"/D/ProgramsMy/OSPanel/domains/MCHES/MCS/database/migrations/2020_07_17_135427_path_image.php",
+		"/D/ProgramsMy/OSPanel/domains/MCHES/MCS/app/Http/Controllers/Aboutone.php",
+		"/D/ProgramsMy/OSPanel/domains/MCHES/MCS/vendor/laravel/framework/src/Illuminate/Database/Schema/Blueprint.php",
+		"/D/ProgramsMy/OSPanel/domains/MCHES/MCS/database/migrations/2019_08_19_000000_create_failed_jobs_table.php",
+		"/D/ProgramsMy/OSPanel/domains/MCHES/MCS/vendor/laravel/framework/src/Illuminate/Support/Facades/Schema.php",
+		"/D/ProgramsMy/OSPanel/domains/MCHES/MCS/vendor/laravel/framework/src/Illuminate/Database/Migrations/Migration.php",
+		"/D/ProgramsMy/OSPanel/domains/MCHES/MCS/app/Http/Controllers/Aboutall.php",
+		"/D/ProgramsMy/OSPanel/domains/MCHES/MCS/vendor/laravel/framework/src/Illuminate/Http/Request.php",
+		"/D/ProgramsMy/OSPanel/domains/MCHES/MCS/resources/views/file.blade.php",
+		"/D/ProgramsMy/OSPanel/domains/MCHES/Laravel5Portfolio/public/index.php",
+		"/D/ProgramsMy/OSPanel/domains/MCHES/Laravel5Portfolio/composer.json",
+		"/D/ProgramsMy/OSPanel/domains/MCHES/Laravel5Portfolio/README.md",
+		"/D/MyProgect/servers/WorkingLine/php/YIICORE/YIICORE/.gitignore",
+		"/D/MyProgect/servers/WorkingLine/php/YIICORE/TEST.txt",
+		"/D/MyProgect/servers/WorkingLine/php/YIICORE/YIICORE/TEST.txt",
+		"/D/ProgramsMy/OSPanel/domains/TEST/mysqltasks.php",
+		"/D/ProgramsMy/OSPanel/domains/YIICORE/yii2-app-advanced/vendor/yiisoft/yii2/db/SchemaBuilderTrait.php",
+		"/D/ProgramsMy/OSPanel/domains/YIICORE/yii2-app-advanced/vendor/yiisoft/yii2/db/ColumnSchemaBuilder.php",
+		"/D/ProgramsMy/OSPanel/domains/YIICORE/yii2-app-advanced/vendor/yiisoft/yii2/db/Migration.php",
+		"/D/ProgramsMy/OSPanel/domains/YIICORE/yii2-app-advanced/environments/dev/common/config/main-local.php",
+		"/D/ProgramsMy/OSPanel/domains/YIICORE/yii2-app-advanced/environments/dev/common/config/test-local.php",
+		"/D/ProgramsMy/OSPanel/domains/YIICORE/yii2-app-advanced/frontend/config/main.php",
+		"/D/ProgramsMy/OSPanel/domains/YIICORE/yii2-app-advanced/vendor/codeception/phpunit-wrapper/src/Constraint/WebDriver.php",
+		"/D/ProgramsMy/OSPanel/domains/YIICORE/yii2-app-advanced/vendor/codeception/phpunit-wrapper/src/Constraint/WebDriverNot.php",
+		"/D/ProgramsMy/OSPanel/domains/YIICORE/yii2-app-advanced/vendor/codeception/codeception/src/Codeception/Lib/Interfaces/Web.php",
+		"/D/ProgramsMy/OSPanel/domains/YIICORE/yii2-app-advanced/environments/prod/frontend/web/index.php",
+		"/D/ProgramsMy/OSPanel/domains/YIICORE/yii2-app-advanced/common/config/test.php",
+		"/D/ProgramsMy/OSPanel/domains/YIICORE/yii2-app-advanced/common/config/main.php",
+		"/D/ProgramsMy/OSPanel/domains/YIICORE/yii2-app-advanced/frontend/web/index.php",
+		"/D/ProgramsMy/OSPanel/domains/YIICORE/yii2-app-advanced/common/config/bootstrap.php",
+		"/D/ProgramsMy/OSPanel/domains/YIICORE/YIICORE/config/web.php",
+		"/D/ProgramsMy/OSPanel/domains/PHPCLIENT/PHP/WebPHP/ClientAPP/ClientAPP.php",
+		"/D/ProgramsMy/OSPanel/domains/PHPCLIENT/PHP/WebPHP/TradeControler/TradeControler.php",
+		"/D/ProgramsMy/OSPanel/domains/PHPCLIENT/PHP/WebPHP/view/MainView.php",
+		"/D/ProgramsMy/OSPanel/domains/PHPCLIENT/PHP/WebPHP/Client/Client.php",
+		"/D/ProgramsMy/OSPanel/domains/PHPCLIENT/PHP/WebPHP/interface/ITradeControler.php",
+		"/C/Users/SLAVA_PC/AppData/Local/Temp/7zO44CC470C/mysqltasks.php",
+		"/D/ProgramsMy/OSPanel/domains/PHPCLIENT/PHP/WebPHP/ServerAPP/ServerAPP.php",
+		"/D/ProgramsMy/OSPanel/domains/PHPCLIENT/PHP/WebPHP/Exceptions/Exceptions.php",
+		"/D/ProgramsMy/OSPanel/domains/PHPCLIENT/PHP/WebPHP/view/Resources/MainView.html",
+		"/D/ProgramsMy/OSPanel/domains/PHPCLIENT/PHP/vendor/autoload.php",
+		"/D/ProgramsMy/OSPanel/domains/PHPCLIENT/PHP/vendor/twig/twig/src/Loader/FilesystemLoader.php",
+		"/D/ProgramsMy/OSPanel/domains/PHPCLIENT/PHP/vendor/twig/twig/src/TwigTest.php",
+		"/D/ProgramsMy/OSPanel/domains/PHPCLIENT/PHP/vendor/twig/twig/src/TwigFunction.php",
+		"/D/ProgramsMy/OSPanel/domains/PHPCLIENT/PHP/WebPHP/view/Resources/JS/jQvery.js",
+		"/D/ProgramsMy/OSPanel/domains/PHPCLIENT/PHP/WebPHP/interface/IExceptions.php",
+		"/D/ProgramsMy/OSPanel/domains/PHPCLIENT/PHP/WebPHP/interface/IClientAPP.php",
+		"/D/ProgramsMy/OSPanel/domains/PHPCLIENT/PHP/WebPHP/interface/IClient.php",
+		"/D/ProgramsMy/OSPanel/domains/PHPCLIENT/PHP/composer.json",
+		"/D/ProgramsMy/OSPanel/domains/PHPCLIENT/PHP/WebPHP/index.php",
+		"/D/ProgramsMy/OSPanel/domains/PHPCLIENT/PHP/WebPHP/view/generalview.php",
+		"/D/MyProgect/client/5/FrameWork/Facade/WebWorker/PHP/vendor/composer/autoload_psr4.php",
+		"/D/MyProgect/client/5/FrameWork/Facade/WebWorker/PHP/vendor/composer/autoload_real.php",
+		"/D/ProgramsMy/OSPanel/domains/PHPCLIENT/PHP/vendor/composer/autoload_real.php",
+		"/D/ProgramsMy/OSPanel/domains/PHPCLIENT/PHP/WebPHP/config.php",
+		"/D/ProgramsMy/OSPanel/domains/PHPCLIENT/PHP/config.php",
+		"/D/ProgramsMy/OSPanel/domains/PHPCLIENT/PHP/vendor/composer/autoload_psr4.php",
+		"/C/Users/SLAVA_PC/Desktop/offers5_1.xml",
+		"/C/Users/SLAVA_PC/AppData/Local/Temp/7zOC335AA8C/offers5_1.xml",
+		"/D/ProgramsMy/OSPanel/domains/PHPCLIENT/PHP/WebPHP/interface/IServerAPP.php",
+		"/D/ProgramsMy/OSPanel/domains/PHPCLIENT/PHP/WebPHP/TEST.php",
+		"/D/ProgramsMy/OSPanel/domains/PHPCLIENT/PHP/WebPHP/TradeControle/TradeControle.php",
+		"/D/MyProgect/client/5/FrameWork/Facade/WebWorker/PHP/WebPHP/TEST.php",
+		"/D/MyProgect/client/5/FrameWork/Facade/WebWorker/PHP/WebPHP/interface/IClient.php",
+		"/D/MyProgect/client/5/FrameWork/Facade/WebWorker/nodejs/ReactJS/src/EceptiptionsModule.js",
+		"/D/MyProgect/client/5/FrameWork/Facade/WebWorker/nodejs/ReactJS/src/UserController.jsx",
+		"/D/MyProgect/client/5/FrameWork/Facade/WebWorker/nodejs/ReactJS/src/ClientModules.js",
+		"/D/MyProgect/client/5/FrameWork/Facade/WebWorker/nodejs/ReactJS/src/TradePolicy.jsx",
+		"/D/MyProgect/client/5/FrameWork/Facade/WebWorker/nodejs/ReactJS/src/ServerModules.js",
+		"/D/MyProgect/client/5/FrameWork/Facade/WebWorker/nodejs/ReactJS/src/About.js",
+		"/D/MyProgect/client/5/FrameWork/Facade/WebWorker/nodejs/ReactJS/src/App.js",
+		"/D/MyProgect/client/5/FrameWork/Facade/WebWorker/PHP/vendor/autoload.php",
+		"/D/MyProgect/client/5/FrameWork/Facade/WebWorker/PHP/TEST.php",
+		"/D/MyProgect/client/5/FrameWork/Facade/WebWorker/PHP/composer.json",
+		"/D/MyProgect/client/5/FrameWork/Facade/WebWorker/PHP/index.php",
+		"/D/MyProgect/client/5/FrameWork/Facade/WebWorker/nodejs/ReactJS/src/index.js",
+		"/D/ProgramsMy/OSPanel/domains/blog/composer.json",
+		"/D/ProgramsMy/OSPanel/domains/ADV/gb-tracker/composer.json",
+		"/D/MyProgect/client/5/FrameWork/Facade/WebWorker/PHP/WebPHP/.htaccess",
+		"/D/ProgramsMy/OSPanel/domains/ADV/gb-tracker/frontend/web/index.php",
+		"/D/MyProgect/client/5/FrameWork/Facade/WebWorker/PHP/WebPHP/index.php",
+		"/D/ProgramsMy/OSPanel/domains/ADV/gb-tracker/backend/web/index.php",
+		"/D/ProgramsMy/OSPanel/domains/ADV/gb-tracker/vendor/autoload.php",
+		"/D/ProgramsMy/OSPanel/domains/blog/public/index.php",
+		"/D/MyProgect/client/5/FrameWork/Facade/WebWorker/nodejs/ReactJS/package.json",
+		"/D/MyProgect/client/5/FrameWork/Facade/WebWorker/nodejs/ReactJS/package-lock.json",
+		"/D/MyProgect/client/5/FrameWork/Facade/WebWorker/nodejs/ReactJS/node_modules/file-system/file-system.js",
+		"/D/MyProgect/client/5/FrameWork/Facade/WebWorker/nodejs/ReactJS/node_modules/file-system/test/fs.js",
+		"/D/MyProgect/client/5/FrameWork/Facade/WebWorker/nodejs/ReactJS/node_modules/file-system/README.md",
+		"/D/MyProgect/client/5/FrameWork/Facade/WebWorker/nodejs/ReactJS/node_modules/file-system/package.json",
+		"/D/MyProgect/client/5/FrameWork/Facade/WebWorker/nodejs/ReactJS/node_modules/file-system/Gruntfile.js",
+		"/D/MyProgect/client/5/FrameWork/Facade/WebWorker/nodejs/ReactJS/public/index.html",
+		"/D/MyProgect/client/5/FrameWork/Facade/WebWorker/nodejs/ReactJS/README.md",
+		"/D/MyProgect/client/5/FrameWork/Facade/WebWorker/php/index.php",
+		"/D/MyProgect/client/5/FrameWork/Facade/WebWorker/php/Client.jsx",
+		"/D/MyProgect/client/5/FrameWork/Facade/WebWorker/php/ReactGeneral.jsx",
+		"/D/MyProgect/client/5/FrameWork/Facade/WebWorker/php/About.js",
+		"/D/MyProgect/client/5/FrameWork/Facade/WebWorker/nodejs/ReactJS/src/Module.css",
+		"/C/Users/SLAVA_PC/Desktop/index.html",
+		"/D/ProgramsMy/OSPanel/domains/JS/index.html"
+	],
+	"find":
+	{
+		"height": 34.0
+	},
+	"find_in_files":
+	{
+		"height": 118.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 0,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "index.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 25,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								25,
+								25
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 34.0
+	},
+	"input":
+	{
+		"height": 46.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "index.sublime-project",
+	"replace":
+	{
+		"height": 64.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 575.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
