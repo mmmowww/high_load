@@ -135,7 +135,7 @@
 			"file": "index.php",
 			"settings":
 			{
-				"buffer_size": 25,
+				"buffer_size": 430,
 				"encoding": "UTF-8",
 				"line_ending": "Windows"
 			}
@@ -385,15 +385,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 25,
+						"buffer_size": 430,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								25,
-								25
+								0,
+								0
 							]
 						],
 						"settings":

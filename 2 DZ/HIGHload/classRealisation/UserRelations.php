@@ -14,6 +14,14 @@ class UserRelations implements IUserRelations {
      * @param IUser $user Target users
      */public function __construct(PDO $mysql, IUser $user);
 
+     /*
+     $dbh = new PDO('mysql:host=localhost;dbname=test', $user, $pass);
+     $dbh->query('SELECT * from FOO'
+     */
+       
+       $User = new $user();
+
+
     /**
      * Adds direct friend to target user.
      * Returns false if user cannot be added as friend.
