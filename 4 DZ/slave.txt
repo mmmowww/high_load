@@ -1,0 +1,33 @@
+wwwommm@wwwommm-VirtualBox:~$ sudo mysql -v
+Welcome to the MySQL monitor.  Commands end with ; or \g.
+Your MySQL connection id is 9
+Server version: 8.0.21-0ubuntu0.20.04.4 (Ubuntu)
+
+Copyright (c) 2000, 2020, Oracle and/or its affiliates. All rights reserved.
+
+Oracle is a registered trademark of Oracle Corporation and/or its
+affiliates. Other names may be trademarks of their respective
+owners.
+
+Reading history-file /root/.mysql_history
+Type 'help;' or '\h' for help. Type '\c' to clear the current input statement.
+
+mysql> CHANGE MASTER TO MASTER TO MASTER_HOST='12.0.0.1', MASTER_USER='Slave',
+MASTER_PASWORD = '123456789'mysql-bin.000013, MASTER_LOG_POS=156;
+--------------
+CHANGE MASTER TO MASTER TO MASTER_HOST='12.0.0.1', MASTER_USER='Slave', MASTER_PASWORD = '123456789'mysql-bin.000013, MASTER_LOG_POS=156
+--------------
+
+ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'MASTER TO MASTER_HOST='127.0.0.1', MASTER_USER='Slave', MASTER_PASWORD = '123456' at line 1
+mysql> START SLAVE
+    -> START SLAVE;
+--------------
+START SLAVE
+START SLAVE
+--------------
+
+ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'START SLAVE' at line 2
+mysql> START SLAVE;
+--------------
+START SLAVE
+--------------
