@@ -1,0 +1,300 @@
+<MASTER>
+: lo: <LOOPBACK,UP,LOWER_UP> mtu 65536 qdisc noqueue state UNKNOWN group default qlen 1000
+    link/loopback 00:00:00:00:00:00 brd 00:00:00:00:00:00
+    inet 12.0.0.1/8 scope host lo
+       valid_lft forever preferred_lft forever
+    inet6 ::1/128 scope host 
+       valid_lft forever preferred_lft forever
+2: enp0s3: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc fq_codel state UP group default qlen 1000
+    link/ether 08:00:27:23:e8:a7 brd ff:ff:ff:ff:ff:ff
+    inet 10.0.2.15/24 brd 10.0.2.255 scope global dynamic noprefixroute enp0s3
+       valid_lft 86155sec preferred_lft 86155sec
+    inet6 fe80::5ba0:5e80:4761:73b2/64 scope link noprefixroute 
+       valid_lft forever preferred_lft forever
+3: enp0s8: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc fq_codel state UP group default qlen 1000
+    link/ether 08:00:27:b6:ab:d8 brd ff:ff:ff:ff:ff:ff
+    inet 10.1.2.5/24 brd 10.1.2.255 scope global dynamic noprefixroute enp0s8
+       valid_lft 355sec preferred_lft 355sec
+    inet6 fe80::15f8:a8b3:9e1e:ccc5/64 scope link noprefixroute 
+       valid_lft forever preferred_lft forever
+mmmowww@mmmowww-VirtualBox:~$ sudo nano /etc/my.cnf
+[sudo] password for mmmowww: 
+mmmowww@mmmowww-VirtualBox:~$ sudo nano /etc/my.cnf
+Welcome to the MySQL monitor.  Commands end with ; or \g.
+Your MySQL connection id is 8
+Server version: 8.0.21-0ubuntu0.20.04.4 (Ubuntu)
+
+Copyright (c) 2000, 2020, Oracle and/or its affiliates. All rights reserved.
+
+Oracle is a registered trademark of Oracle Corporation and/or its
+affiliates. Other names may be trademarks of their respective
+owners.
+
+Reading history-file /root/.mysql_history
+Type 'help;' or '\h' for help. Type '\c' to clear the current input statement.
+
+mysql> show databases;
+--------------
+show databases
+--------------
+
++--------------------+
+| Database           |
++--------------------+
+| information_schema |
+| mysql              |
+| performance_schema |
+| sys                |
+| test               |
++--------------------+
+5 rows in set (0.00 sec)
+
+mysql> select User from mysql.user
+    -> select User from mysql.user;
+--------------
+select User from mysql.user
+select User from mysql.user
+--------------
+
+ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'select User from mysql.user' at line 2
+mysql> ^X^C^C
+
+^C
+mysql> exit
+xit
+^C
+mysql> exit;
+Writing history-file /root/.mysql_history
+Bye
+mmmowww@mmmowww-VirtualBox:~$ sudo mysql -u root
+Welcome to the MySQL monitor.  Commands end with ; or \g.
+Your MySQL connection id is 9
+Server version: 8.0.21-0ubuntu0.20.04.4 (Ubuntu)
+
+Copyright (c) 2000, 2020, Oracle and/or its affiliates. All rights reserved.
+
+Oracle is a registered trademark of Oracle Corporation and/or its
+affiliates. Other names may be trademarks of their respective
+owners.
+
+Type 'help;' or '\h' for help. Type '\c' to clear the current input statement.
+
+mysql> select User from mysql.user;
++------------------+
+| User             |
++------------------+
+| debian-sys-maint |
+| mysql.infoschema |
+| mysql.session    |
+| mysql.sys        |
+| root             |
++------------------+
+5 rows in set (0.00 sec)
+
+mysql> GRANT REPLICATION SLAVE ON *.* TO `Slave`@`%` IDENTIFIED BY `password`;
+ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'IDENTIFIED BY `password`' at line 1
+mysql> GRANT REPLICATION SLAVE ON *.* TO 'Slave'@'%' IDENTIFIED BY 'password';
+ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'IDENTIFIED BY 'password'' at line 1
+mysql> GRANT REPLICATION SLAVE ON *.* TO 'Slave'@'%' IDENTIFIED BY 'Adegeil1'
+    -> GRANT REPLICATION SLAVE ON *.* TO 'Slave'@'%' IDENTIFIED BY 'Adegeil1';
+ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'IDENTIFIED BY 'Adegeil1'
+GRANT REPLICATION SLAVE ON *.* TO 'Slave'@'%' IDENTIFIE' at line 1
+mysql> service mysql-server restart;
+ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'service mysql-server restart' at line 1
+GRANT REPLICATION SLAVE ON *.* TO 'user'@'%' IDENTIFIED BY 'slave_user';
+rows in set (0.00 sec)
+mysql> USE test;
+Database changed
+mysql> FLUSH TABLES WITH READ LOCK;
+Query OK, 0 rows affected (0.00 sec)
+
+SHOW MASTER STATUS;
++---------------+----------+--------------+------------------+-------------------+
+| File          | Position | Binlog_Do_DB | Binlog_Ignore_DB | Executed_Gtid_Set |
++---------------+----------+--------------+------------------+-------------------+
+| binlog.000011 |      156 |              |                  |                   |
++---------------+----------+--------------+------------------+-------------------+
+1 row in set (0.00 sec)
+mysql> UNLOCK TABLES;
+Query OK, 0 rows affected (0.00 sec)
+mmmowww@mmmowww-VirtualBox:~$ sudo mysql -v
+[sudo] password for mmmowww: 
+mysql: [ERROR] Found option without preceding group in config file /etc/my.cnf at line 1.
+mysql: [ERROR] Fatal error in defaults handling. Program aborted!
+mmmowww@mmmowww-VirtualBox:~$ sudo /etc/my.cnf
+sudo: /etc/my.cnf: command not found
+mmmowww@mmmowww-VirtualBox:~$ sudo nano  /etc/my.cnf
+mmmowww@mmmowww-VirtualBox:~$ sudo nano  /etc/my.cnf
+mmmowww@mmmowww-VirtualBox:~$ sudo mysql -v
+mysql: [ERROR] Found option without preceding group in config file /etc/my.cnf at line 1.
+mysql: [ERROR] Fatal error in defaults handling. Program aborted!
+mmmowww@mmmowww-VirtualBox:~$ sudo nano  /etc/my.cnf
+mmmowww@mmmowww-VirtualBox:~$ sudo mysql -v
+mysql: [ERROR] Found option without preceding group in config file /etc/my.cnf at line 1.
+mysql: [ERROR] Fatal error in defaults handling. Program aborted!
+mmmowww@mmmowww-VirtualBox:~$ sudo nano  /etc/my.cnf
+mmmowww@mmmowww-VirtualBox:~$ sudo nano  /etc/my.cnf
+mmmowww@mmmowww-VirtualBox:~$ sudo mysql -v
+Welcome to the MySQL monitor.  Commands end with ; or \g.
+Your MySQL connection id is 8
+Server version: 8.0.21-0ubuntu0.20.04.4 (Ubuntu)
+
+Copyright (c) 2000, 2020, Oracle and/or its affiliates. All rights reserved.
+
+Oracle is a registered trademark of Oracle Corporation and/or its
+affiliates. Other names may be trademarks of their respective
+owners.
+
+Reading history-file /root/.mysql_history
+Type 'help;' or '\h' for help. Type '\c' to clear the current input statement.
+
+mysql> show databases;
+--------------
+show databases
+--------------
+
++--------------------+
+| Database           |
++--------------------+
+| information_schema |
+| mysql              |
+| performance_schema |
+| sys                |
+| test               |
++--------------------+
+5 rows in set (0.00 sec)
+
+mysql> select User from mysql.user
+    -> select User from mysql.user;
+--------------
+select User from mysql.user
+select User from mysql.user
+--------------
+
+ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'select User from mysql.user' at line 2
+mysql> ^X^C^C
+
+^C
+mysql> exit
+xit
+^C
+mysql> exit;
+Writing history-file /root/.mysql_history
+Bye
+mmmowww@mmmowww-VirtualBox:~$ sudo mysql -u root
+Welcome to the MySQL monitor.  Commands end with ; or \g.
+Your MySQL connection id is 9
+Server version: 8.0.21-0ubuntu0.20.04.4 (Ubuntu)
+
+Copyright (c) 2000, 2020, Oracle and/or its affiliates. All rights reserved.
+
+Oracle is a registered trademark of Oracle Corporation and/or its
+affiliates. Other names may be trademarks of their respective
+owners.
+
+Type 'help;' or '\h' for help. Type '\c' to clear the current input statement.
+
+mysql> select User from mysql.user;
++------------------+
+| User             |
++------------------+
+| debian-sys-maint |
+| mysql.infoschema |
+| mysql.session    |
+| mysql.sys        |
+| root             |
+| Slave            |
++------------------+
+5 rows in set (0.00 sec)
+
+mysql> GRANT REPLICATION SLAVE ON *.* TO `Slave`@`%` IDENTIFIED BY `password`;
+ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'IDENTIFIED BY `password`' at line 1
+mysql> GRANT REPLICATION SLAVE ON *.* TO 'Slave'@'%' IDENTIFIED BY 'password';
+ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'IDENTIFIED BY 'password'' at line 1
+mysql> GRANT REPLICATION SLAVE ON *.* TO 'Slave'@'%' IDENTIFIED BY 'Adegeil1'
+    -> GRANT REPLICATION SLAVE ON *.* TO 'Slave'@'%' IDENTIFIED BY 'Adegeil1';
+ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'IDENTIFIED BY 'Adegeil1'
+GRANT REPLICATION SLAVE ON *.* TO 'Slave'@'%' IDENTIFIE' at line 1
+mysql> service mysql-server restart;
+ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'service mysql-server restart' at line 1
+mysql> exit
+Bye
+mmmowww@mmmowww-VirtualBox:~$ sudo service mysql-server restart
+Failed to restart mysql-server.service: Unit mysql-server.service not found.
+mmmowww@mmmowww-VirtualBox:~$ service mysql-server restart
+Failed to restart mysql-server.service: Unit mysql-server.service not found.
+mmmowww@mmmowww-VirtualBox:~$ sudo mysql -u root
+Welcome to the MySQL monitor.  Commands end with ; or \g.
+Your MySQL connection id is 10
+Server version: 8.0.21-0ubuntu0.20.04.4 (Ubuntu)
+
+Copyright (c) 2000, 2020, Oracle and/or its affiliates. All rights reserved.
+
+Oracle is a registered trademark of Oracle Corporation and/or its
+affiliates. Other names may be trademarks of their respective
+owners.
+
+Type 'help;' or '\h' for help. Type '\c' to clear the current input statement.
+
+mysql> SHOW SLAVE STATUS\G
+Empty set (0.00 sec)
+
+mysql> SHOW SLAVE STATUS
+    -> SHOW SLAVE STATUS\G;
+ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'SHOW SLAVE STATUS' at line 2
+ERROR: 
+No query specified
+
+mysql> SHOW SLAVE STATUS\G;
+Empty set (0.00 sec)
+
+ERROR: 
+No query specified
+
+mysql> SHOW SLAVE STATUS;
+Empty set (0.00 sec)
+
+mysql> GRANT REPLICATION SLAVE ON *.* TO 'user'@'%';
+ERROR 1410 (42000): You are not allowed to create a user with GRANT
+mysql> CREATE USER 'repl_slave'@'10.20.30.%' IDENTIFIED BY 'Adegeil1';
+ERROR 1819 (HY000): Your password does not satisfy the current policy requirements
+mysql> CREATE USER 'repl_slave'@'10.20.30.%' IDENTIFIED BY 'Adegeil303';
+ERROR 1819 (HY000): Your password does not satisfy the current policy requirements
+mysql> CREATE USER 'repl_slave'@'10.20.30.%' IDENTIFIED BY 'PARADOX303';
+ERROR 1819 (HY000): Your password does not satisfy the current policy requirements
+mysql> CREATE USER 'repl_slave'@'10.20.30.%' IDENTIFIED BY 'PARADOX303';
+ERROR 1819 (HY000): Your password does not satisfy the current policy requirements
+mysql> CREATE USER 'repl_slave'@'10.20.30.%' IDENTIFIED BY 'PARADOX303';
+ERROR 1819 (HY000): Your password does not satisfy the current policy requirements
+mysql> CREATE USER 'repl_slave'@'10.20.30.%' IDENTIFIED BY '';
+ERROR 1819 (HY000): Your password does not satisfy the current policy requirements
+mysql> CREATE USER 'repl_slave'@'%' IDENTIFIED BY '';
+ERROR 1819 (HY000): Your password does not satisfy the current policy requirements
+mysql> CREATE USER 'repl_slave'@'10.20.30.%' IDENTIFIED BY 'Passw0rdf0rRepl';
+ERROR 1819 (HY000): Your password does not satisfy the current policy requirements
+mysql> GRANT REPLICATION SLAVE ON *.* TO 'user'@'%' IDENTIFIED BY 'slave_user';
+ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'IDENTIFIED BY 'slave_user'' at line 1
+mysql> SHOW DATABASES;
++--------------------+
+| Database           |
++--------------------+
+| information_schema |
+| mysql              |
+| performance_schema |
+| sys                |
+| test               |
++--------------------+
+5 rows in set (0.00 sec)
+
+mysql> USE test;
+Database changed
+mysql> FLUSH TABLES WITH READ LOCK;
+Query OK, 0 rows affected (0.00 sec)
+
+mysql> SHOW MASTER STATUS;
++---------------+----------+--------------+------------------+-------------------+
+| File          | Position | Binlog_Do_DB | Binlog_Ignore_DB | Executed_Gtid_Set |
++---------------+----------+--------------+------------------+-------------------+
+| binlog.000011 |      156 |              |                  |                   |
++---------------+----------+--------------+------------------+-------------------+
+1 row in set (0.00 sec)
