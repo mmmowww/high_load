@@ -1,0 +1,7 @@
+{
+    "name": "slava_pc/hig-hload",
+    "require": {
+        "monolog/monolog": "^2.1",
+        "colinmollenhour/cache-backend-redis": "^1.14"
+    }
+}
