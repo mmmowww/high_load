@@ -1,0 +1,27 @@
+sudo nginx -t
+[sudo] password for mmmowww: 
+nginx: [emerg] unknown directive "evenst" in /etc/nginx/conf.d/mysite.local.conf:2
+nginx: configuration file /etc/nginx/nginx.conf test failed
+mmmowww@mmmowww-VirtualBox:~$ sudo nginx -t
+nginx: [emerg] unknown directive "evenst" in /etc/nginx/conf.d/mysite.local.conf:2
+nginx: configuration file /etc/nginx/nginx.conf test failed
+mmmowww@mmmowww-VirtualBox:~$ sudo nginx -t
+nginx: [emerg] directive "location" has no opening "{" in /etc/nginx/conf.d/mysite.local.conf:9
+nginx: configuration file /etc/nginx/nginx.conf test failed
+mmmowww@mmmowww-VirtualBox:~$ sudo nginx -t
+nginx: [emerg] directive "location" has no opening "{" in /etc/nginx/conf.d/mysite.local.conf:9
+nginx: configuration file /etc/nginx/nginx.conf test failed
+mmmowww@mmmowww-VirtualBox:~$ sudo nginx -t
+nginx: [warn] conflicting server name "_" on 0.0.0.0:80, ignored
+nginx: the configuration file /etc/nginx/nginx.conf syntax is ok
+nginx: configuration file /etc/nginx/nginx.conf test is successful
+mmmowww@mmmowww-VirtualBox:~$ sudo nginx -t
+nginx: the configuration file /etc/nginx/nginx.conf syntax is ok
+nginx: configuration file /etc/nginx/nginx.conf test is successful
+mmmowww@mmmowww-VirtualBox:~$ sudo nginx -t
+nginx: [emerg] "events" directive is not allowed here in /etc/nginx/conf.d/mysite.local.conf:1
+nginx: configuration file /etc/nginx/nginx.conf test failed
+mmmowww@mmmowww-VirtualBox:~$ sudo nginx -t
+nginx: [emerg] "http" directive is not allowed here in /etc/nginx/conf.d/mysite.local.conf:1
+nginx: configuration file /etc/nginx/nginx.conf test failed
+mmmowww@mmmowww-VirtualBox:~$ sudo nano /etc/nginx/conf.d/ upstream.conf
