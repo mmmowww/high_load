@@ -1,0 +1,159 @@
+mmmowww@mmmowww-VirtualBox:~$ sudo apt-get install chrony
+[sudo] password for mmmowww: 
+Reading package lists... Done
+Building dependency tree       
+Reading state information... Done
+The following package was automatically installed and is no longer required:
+  libfprint-2-tod1
+Use 'sudo apt autoremove' to remove it.
+The following packages will be REMOVED
+  systemd-timesyncd
+The following NEW packages will be installed
+  chrony
+0 to upgrade, 1 to newly install, 1 to remove and 47 not to upgrade.
+Need to get 220 kB of archives.
+After this operation, 292 kB of additional disk space will be used.
+Do you want to continue? [Y/n] y
+Get:1 http://ru.archive.ubuntu.com/ubuntu focal-updates/main amd64 chrony amd64 3.5-6ubuntu6.2 [220 kB]
+Fetched 220 kB in 0s (702 kB/s)
+dpkg: systemd-timesyncd: dependency problems, but removing anyway as you requested:
+ systemd depends on systemd-timesyncd | time-daemon; however:
+  Package systemd-timesyncd is to be removed.
+  Package time-daemon is not installed.
+  Package systemd-timesyncd which provides time-daemon is to be removed.
+ systemd depends on systemd-timesyncd | time-daemon; however:
+  Package systemd-timesyncd is to be removed.
+  Package time-daemon is not installed.
+  Package systemd-timesyncd which provides time-daemon is to be removed.
+
+(Reading database ... 197205 files and directories currently installed.)
+Removing systemd-timesyncd (245.4-4ubuntu3.2) ...
+Selecting previously unselected package chrony.
+(Reading database ... 197192 files and directories currently installed.)
+Preparing to unpack .../chrony_3.5-6ubuntu6.2_amd64.deb ...
+Unpacking chrony (3.5-6ubuntu6.2) ...
+Setting up chrony (3.5-6ubuntu6.2) ...
+Creating '_chrony' system user/group for the chronyd daemon…
+
+Creating config file /etc/chrony/chrony.conf with new version
+
+Creating config file /etc/chrony/chrony.keys with new version
+Created symlink /etc/systemd/system/chronyd.service → /lib/systemd/system/chrony.service.
+Created symlink /etc/systemd/system/multi-user.target.wants/chrony.service → /lib/systemd/system/chrony.service.
+Processing triggers for man-db (2.9.1-1) ...
+Processing triggers for dbus (1.12.16-2ubuntu2.1) ...
+Processing triggers for systemd (245.4-4ubuntu3.2) ...
+mmmowww@mmmowww-VirtualBox:~$ systemctl enable chrony
+Synchronizing state of chrony.service with SysV service script with /lib/systemd/systemd-sysv-install.
+Executing: /lib/systemd/systemd-sysv-install enable chrony
+mmmowww@mmmowww-VirtualBox:~$ systemctl start chrony
+mmmowww@mmmowww-VirtualBox:~$ sudo useradd -M -s /bin/false prometheus
+mmmowww@mmmowww-VirtualBox:~$ sudo useradd -M -s /bin/false node_exporter
+mmmowww@mmmowww-VirtualBox:~$ $ curl -LO https://github.com/prometheus/prometheus/releases/download/v1.7.1/prometheus-1.8.0.linux-amd64.tar.gz
+$: command not found
+mmmowww@mmmowww-VirtualBox:~$ curl -LO https://github.com/prometheus/prometheus/releases/download/v1.7.1/prometheus-1.8.0.linux-amd64.tar.gz
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+100     9  100     9    0     0     30      0 --:--:-- --:--:-- --:--:--    30
+mmmowww@mmmowww-VirtualBox:~$ sha256sum prometheus-1.8.0.linux-amd64.tar.gz
+0019dfc4b32d63c1392aa264aed2253c1e0c2fb09216f8e2cc269bbfb8bb49b5  prometheus-1.8.0.linux-amd64.tar.gz
+mmmowww@mmmowww-VirtualBox:~$ tar xvf prometheus-1.8.0.linux-amd64.tar.gz
+tar: prometheus-1.8.0.linux-amd64.tar.gz: Cannot open: No such file or directory
+tar: Error is not recoverable: exiting now
+mmmowww@mmmowww-VirtualBox:~$ wget https://github.com/prometheus/prometheus/releases/download/v${RELEASE}/prometheus-${RELEASE}.linux-amd64.tar.gz
+--2020-09-12 17:42:32--  https://github.com/prometheus/prometheus/releases/download/v/prometheus-.linux-amd64.tar.gz
+Resolving github.com (github.com)... 140.82.121.4
+Connecting to github.com (github.com)|140.82.121.4|:443... connected.
+HTTP request sent, awaiting response... 404 Not Found
+2020-09-12 17:42:32 ERROR 404: Not Found.
+
+mmmowww@mmmowww-VirtualBox:~$ wget https://github.com/prometheus/prometheus/releases/download/v${RELEASE}/prometheus-${RELEASE}.linux-amd64.tar.gz
+--2020-09-12 17:42:37--  https://github.com/prometheus/prometheus/releases/download/v/prometheus-.linux-amd64.tar.gz
+Resolving github.com (github.com)... 140.82.121.3
+Connecting to github.com (github.com)|140.82.121.3|:443... connected.
+HTTP request sent, awaiting response... 404 Not Found
+2020-09-12 17:42:37 ERROR 404: Not Found.
+
+mmmowww@mmmowww-VirtualBox:~$ sudo wget https://github.com/prometheus/prometheus/releases/download/v${RELEASE}/prometheus-${RELEASE}.linux-amd64.tar.gz
+--2020-09-12 17:42:48--  https://github.com/prometheus/prometheus/releases/download/v/prometheus-.linux-amd64.tar.gz
+Resolving github.com (github.com)... 140.82.121.3
+Connecting to github.com (github.com)|140.82.121.3|:443... connected.
+HTTP request sent, awaiting response... 404 Not Found
+2020-09-12 17:42:48 ERROR 404: Not Found.
+
+mmmowww@mmmowww-VirtualBox:~$ curl -s https://api.github.com/repos/prometheus/prometheus/releases/latest | grep browser_download_url | grep linux-amd64 | cut -d '"' -f 4 | wget -qi -
+
+^C          
+mmmowww@mmmowww-VirtualBox:~$ sudo curl -s https://api.github.com/repos/prometheus/prometheus/releases/latest | grep browser_download_url | grep linux-amd64 | cut -d '"' -f 4 | wget -qi -
+
+
+
+
+
+
+
+^C
+mmmowww@mmmowww-VirtualBox:~$ cd ~
+mmmowww@mmmowww-VirtualBox:~$ curl -LO https://github.com/prometheus/prometheus/releases/download/v2.0.0/prometheus-2.0.0.linux-amd64.tar.gz
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+100   657  100   657    0     0   2003      0 --:--:-- --:--:-- --:--:--  2003
+100 17.9M  100 17.9M    0     0   674k      0  0:00:27  0:00:27 --:--:-- 1039k
+mmmowww@mmmowww-VirtualBox:~$ sha256sum prometheus-2.0.0.linux-amd64.tar.gz
+e12917b25b32980daee0e9cf879d9ec197e2893924bd1574604eb0f550034d46  prometheus-2.0.0.linux-amd64.tar.gz
+mmmowww@mmmowww-VirtualBox:~$ tar xvf prometheus-2.0.0.linux-amd64.tar.gz
+prometheus-2.0.0.linux-amd64/
+prometheus-2.0.0.linux-amd64/consoles/
+prometheus-2.0.0.linux-amd64/consoles/index.html.example
+prometheus-2.0.0.linux-amd64/consoles/node-cpu.html
+prometheus-2.0.0.linux-amd64/consoles/node-disk.html
+prometheus-2.0.0.linux-amd64/consoles/node-overview.html
+prometheus-2.0.0.linux-amd64/consoles/node.html
+prometheus-2.0.0.linux-amd64/consoles/prometheus-overview.html
+prometheus-2.0.0.linux-amd64/consoles/prometheus.html
+prometheus-2.0.0.linux-amd64/console_libraries/
+prometheus-2.0.0.linux-amd64/console_libraries/menu.lib
+prometheus-2.0.0.linux-amd64/console_libraries/prom.lib
+prometheus-2.0.0.linux-amd64/prometheus.yml
+prometheus-2.0.0.linux-amd64/LICENSE
+prometheus-2.0.0.linux-amd64/NOTICE
+prometheus-2.0.0.linux-amd64/prometheus
+prometheus-2.0.0.linux-amd64/promtool
+mmmowww@mmmowww-VirtualBox:~$ sudo cp prometheus-2.0.0.linux-amd64/prometheus /usr/local/bin/
+mmmowww@mmmowww-VirtualBox:~$ sudo cp prometheus-2.0.0.linux-amd64/promtool /usr/local/bin/
+mmmowww@mmmowww-VirtualBox:~$ sudo chown prometheus:prometheus /usr/local/bin/prometheus
+mmmowww@mmmowww-VirtualBox:~$ sudo chown prometheus:prometheus /usr/local/bin/promtool
+mmmowww@mmmowww-VirtualBox:~$ sudo cp -r prometheus-2.0.0.linux-amd64/consoles /etc/prometheus
+mmmowww@mmmowww-VirtualBox:~$ sudo cp -r prometheus-2.0.0.linux-amd64/console_libraries /etc/prometheus
+mmmowww@mmmowww-VirtualBox:~$ sudo chown -R prometheus:prometheus /etc/prometheus/consoles
+chown: cannot access '/etc/prometheus/consoles': No such file or directory
+mmmowww@mmmowww-VirtualBox:~$ sudo chown -R prometheus:prometheus /etc/prometheus/console_libraries
+mmmowww@mmmowww-VirtualBox:~$ sudo nano /etc/prometheus/prometheus.yml
+mmmowww@mmmowww-VirtualBox:~$ sudo -u prometheus /usr/local/bin/prometheus \
+>     --config.file /etc/prometheus/prometheus.yml \
+>     --storage.tsdb.path /var/lib/prometheus/ \
+>     --web.console.templates=/etc/prometheus/consoles \
+>     --web.console.libraries=/etc/prometheus/console_libraries
+level=info ts=2020-09-12T14:56:21.931211083Z caller=main.go:215 msg="Starting Prometheus" version="(version=2.0.0, branch=HEAD, revision=0a74f98628a0463dddc90528220c94de5032d1a0)"
+level=info ts=2020-09-12T14:56:21.931304899Z caller=main.go:216 build_context="(go=go1.9.2, user=root@615b82cb36b6, date=20171108-07:11:59)"
+level=info ts=2020-09-12T14:56:21.931335607Z caller=main.go:217 host_details="(Linux 5.4.0-45-generic #49-Ubuntu SMP Wed Aug 26 13:38:52 UTC 2020 x86_64 mmmowww-VirtualBox (none))"
+level=info ts=2020-09-12T14:56:21.933467996Z caller=web.go:380 component=web msg="Start listening for connections" address=0.0.0.0:9090
+level=info ts=2020-09-12T14:56:21.935337182Z caller=main.go:314 msg="Starting TSDB"
+level=error ts=2020-09-12T14:56:21.935397966Z caller=main.go:323 msg="Opening storage failed" err="mkdir /var/lib/prometheus/: permission denied"
+mmmowww@mmmowww-VirtualBox:~$ sudo nano /etc/systemd/system/prometheus.service
+mmmowww@mmmowww-VirtualBox:~$ sudo nano /etc/systemd/system/prometheus.service
+mmmowww@mmmowww-VirtualBox:~$ sudo systemctl daemon-reload
+mmmowww@mmmowww-VirtualBox:~$ sudo systemctl start prometheus
+mmmowww@mmmowww-VirtualBox:~$ sudo systemctl status prometheus
+● prometheus.service - Prometheus
+     Loaded: loaded (/etc/systemd/system/prometheus.service; disabled; vendor p>
+     Active: failed (Result: exit-code) since Sat 2020-09-12 17:59:27 MSK; 6s a>
+    Process: 16394 ExecStart=/usr/local/bin/prometheus --config.file /etc/prome>
+   Main PID: 16394 (code=exited, status=217/USER)
+
+сен 12 17:59:27 mmmowww-VirtualBox systemd[1]: Started Prometheus.
+сен 12 17:59:27 mmmowww-VirtualBox systemd[16394]: prometheus.service: Failed t>
+сен 12 17:59:27 mmmowww-VirtualBox systemd[16394]: prometheus.service: Failed a>
+сен 12 17:59:27 mmmowww-VirtualBox systemd[1]: prometheus.service: Main process>
+сен 12 17:59:27 mmmowww-VirtualBox systemd[1]: prometheus.service: Failed with >
+lines 1-11/11 (END)
